@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/imge/8WjWbP6.png);
+    margin-left: 30px;
+}
+
+section,
+footer {
+    padding: 50px 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header {
+    margin-top: 60px;
+
+}
+.header__nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__navList {
+    display: flex;
+}
+
+.header__navList li a {
+    font-size: 16px;
+    color: #50232a;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header__navList li a::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #50232a;
+    ;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.header__navList li a:hover::after,
+.header__navList li a.active::after {
+    opacity: 1;
+}
+
+.header__navList li:not(:last-child) {
+    margin-right: 10px;
+}
+.my__cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.photo__block {
+    margin: 40px;
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+}
+.image {
+    margin: 70px;
+    max-height: 850px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contact__information {
+    color: #50232a;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 2,5;
+}
+.contacts {
+        color: #50232a;
+        font-size: 20px;
+
+}
+.job {
+    text-decoration: none;
+}
+.name {
+    font-size:60px;
+    font-weight: bold;
+}
+.main__block {
+    border-left: 2px solid #fff;
+    padding-left: 30px;
+    color: #fff;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.footer {
+    margin-top: auto;
+}
+
+.footer__title {
+    color: #f0f0f0;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.footer__title::after {
+    background-color: #c1c1c1;
+}
+
+.footer__form {
+    width: 100%;
+    max-width: 860px;
+    margin: 20px auto 0;
+}
+
+.footer__inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__input {
+    max-width: 410px;
+    width: 100%;
+    padding: 15px;
+}
+
+.footer__textarea {
+    width: 100%;
+    height: 210px;
+    margin: 20px 0;
+    resize: none;
+    padding: 15px;
+}
+
+.footer__btn {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 125px;
+    width: 100%;
+    min-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.3s;
+    color: #4d4d4d;
+    margin-bottom: 55px;
+}
+
+.footer__btn:hover {
+    opacity: 0.8;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.footer__icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-top: 1px solid #fff;
+    padding-top: 50px;
+}
+
+.team__socials {
+    display: flex;
+    margin-top: auto;
+    margin-right: 233px;
+}
+
+.team__social {
+    width: 32px;
+    min-height: 32px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__social:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team__social i {
+    color: #000;
+    transition: 0.3s;
+}
+
+.team__social:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.team__social:hover {
+    background: #0084b4;
+    transition: 0.5s;
+}
+
+.footer__text {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.footer__btnUp {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+}

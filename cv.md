@@ -31,7 +31,7 @@ https://github.com/Tana1509
 Tools and technologies: JS, HTML, CSS, Webpack, SCSS, Git .
 
 - January 2020 - March 2020
-- SportLife - Corporate Account Manager
+SportLife - Corporate Account Manager
 
 - September 2010 - July 2019 
 PrivatBank -  Incoming/outcoming line operator - team lead
